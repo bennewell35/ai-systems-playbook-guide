@@ -1,5 +1,3 @@
-
-
 import { Lightbulb } from "lucide-react";
 const tips = [
   {
@@ -55,14 +53,16 @@ const tips = [
 const ProTipsSection = () => (
   <section
     id="pro-tips"
-    className="w-full bg-accent text-white py-10 px-0 mt-12"
+    // Added extra margin above and below for spacing (my-12 on base, my-16 on md). py-10 stays for inside
+    className="w-full bg-accent text-white py-10 md:py-12 my-12 md:my-16 px-0"
   >
     <div className="max-w-5xl mx-auto px-4">
       <h2 className="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-2">
         <Lightbulb className="w-6 h-6 text-white" />
         Product Builder Pro Tips
       </h2>
-      <div className="flex gap-6 overflow-x-auto pb-2 scrollbar-hide snap-x">
+      {/* Ensure a 16px gap (gap-4) between cards in scroll */}
+      <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide snap-x">
         {tips.map((tip, i) => (
           <div
             key={i}
@@ -78,4 +78,3 @@ const ProTipsSection = () => (
   </section>
 );
 export default ProTipsSection;
-

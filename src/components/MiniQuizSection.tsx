@@ -121,8 +121,10 @@ const MiniQuizSection = () => {
   const result = getResultMessage(score);
 
   return (
-    <section className="max-w-2xl mx-auto my-16 px-4" id="mini-quiz">
-      <div className="bg-white rounded-3xl shadow-card p-8 md:p-10 flex flex-col items-center gap-6 animate-fade-in">
+    // Added more spacing above and below on mobile and desktop (my-12 md:my-16)
+    <section className="max-w-2xl mx-auto my-12 md:my-16 px-4" id="mini-quiz">
+      {/* Give quiz card more vertical padding for scannability (py-10 md:py-14) */}
+      <div className="bg-white rounded-3xl shadow-card p-8 md:p-10 py-10 md:py-14 flex flex-col items-center gap-6 animate-fade-in">
         <h2
           className="text-2xl md:text-3xl font-bold mb-2"
           style={{ color: "#0A66C2" }}
@@ -188,3 +190,4 @@ const MiniQuizSection = () => {
 };
 
 export default MiniQuizSection;
+

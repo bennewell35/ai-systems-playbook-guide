@@ -4,8 +4,10 @@ import { icons } from "lucide-react";
 const DocumentIcon = icons["Document"];
 
 const CaseStudySection = () => (
-  <section id="case-study" className="max-w-3xl mx-auto my-16 px-4">
-    <div className="rounded-3xl bg-white border-l-8 border-accent shadow-card flex items-start gap-6 md:gap-8 p-7 md:p-12 animate-fade-in relative">
+  // Add vertical margin/spacer above and below on mobile and desktop
+  <section id="case-study" className="max-w-3xl mx-auto my-12 md:my-16 px-4">
+    {/* More vertical padding on card for scannability (py-10 md:py-14) */}
+    <div className="rounded-3xl bg-white border-l-8 border-accent shadow-card flex items-start gap-6 md:gap-8 p-7 md:p-12 py-10 md:py-14 animate-fade-in relative">
       <div className="flex-shrink-0 mt-1">
         {DocumentIcon && <DocumentIcon size={38} className="text-accent" />}
       </div>
