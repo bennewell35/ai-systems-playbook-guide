@@ -18,7 +18,7 @@ const ConnectSection = () => (
             Email Me
           </a>
           <a
-            href="https://www.linkedin.com/in/newelljben/"
+            href="https://www.linkedin.com/in/jonathan-benjamin-newell-5b450432/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary text-white font-semibold rounded-full px-6 py-3 shadow hover:bg-primary/90 transition-colors text-lg"

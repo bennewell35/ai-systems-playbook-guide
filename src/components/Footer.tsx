@@ -7,7 +7,7 @@ const Footer = () => (
         © 2025 Jonathan Newell | Built on <a href="https://lovable.dev" className="underline font-semibold hover:text-primary">Lovable</a> + OpenAI
       </div>
       <div className="flex items-center gap-4 mt-3 md:mt-0">
-        <a href="https://www.linkedin.com/in/newelljben/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/jonathan-benjamin-newell-5b450432/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
           <Linkedin size={19} className="text-primary hover:text-accent transition" />
         </a>
         <a href="https://github.com/bennewell35" target="_blank" title="GitHub" className="hover:text-accent transition">
