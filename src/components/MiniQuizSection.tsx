@@ -121,12 +121,29 @@ const MiniQuizSection = () => {
   const result = getResultMessage(score);
 
   return (
-    // Added more spacing above and below on mobile and desktop (my-12 md:my-16)
-    <section className="max-w-2xl mx-auto my-12 md:my-16 px-4" id="mini-quiz">
-      {/* Give quiz card more vertical padding for scannability (py-10 md:py-14) */}
-      <div className="bg-white rounded-3xl shadow-card p-8 md:p-10 py-10 md:py-14 flex flex-col items-center gap-6 animate-fade-in">
+    <section
+      className="
+        max-w-full
+        my-12 md:my-16 px-2
+        flex justify-center
+      "
+      id="mini-quiz"
+    >
+      <div
+        className="
+          bg-white rounded-3xl shadow-card
+          w-full
+          max-w-[420px] md:max-w-2xl
+          p-5 md:p-10
+          py-8 md:py-14
+          flex flex-col items-center
+          gap-4 md:gap-6
+          animate-fade-in
+        "
+        style={{ minWidth: 0 }}
+      >
         <h2
-          className="text-2xl md:text-3xl font-bold mb-2"
+          className="text-lg xs:text-xl md:text-3xl font-bold mb-2 text-center"
           style={{ color: "#0A66C2" }}
         >
           Test Your AI Knowledge
@@ -135,36 +152,52 @@ const MiniQuizSection = () => {
         {!showResult ? (
           <>
             <div className="w-full">
-              <div className="mb-4 font-medium text-gray-800 text-lg md:text-xl">
+              <div className="mb-3 font-medium text-gray-800 text-base md:text-xl">
                 {quiz[step].question}
               </div>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-2">
                 {quiz[step].options.map((opt, idx) => (
                   <Button
                     key={idx}
                     onClick={() => handleOption(idx)}
                     variant="outline"
-                    className="justify-start bg-gray-100 hover:bg-accent/10 border border-accent/10 text-gray-900 font-medium px-[18px] py-2 shadow-sm transition-colors rounded-[12px] mb-0"
+                    className="
+                      justify-start
+                      bg-gray-100 hover:bg-accent/10
+                      border border-accent/10
+                      text-gray-900 font-medium
+                      rounded-[12px]
+                      flex-nowrap
+                      break-normal
+                      w-full
+                      px-4 py-2
+                      text-left
+                      whitespace-normal
+                      shadow-sm
+                      min-h-[44px]
+                      transition-colors
+                      mb-0
+                    "
                   >
-                    <span>{opt}</span>
+                    <span className="block w-full break-words">{opt}</span>
                   </Button>
                 ))}
               </div>
             </div>
-            <div className="mt-4 text-sm text-gray-500">
+            <div className="mt-3 text-xs text-gray-500">
               {step + 1} of {quiz.length} questions
             </div>
           </>
         ) : (
           <div className="w-full flex flex-col items-center text-center">
             {result.celebrate && (
-              <CheckCircle size={64} className="text-accent mb-2 animate-fade-in" />
+              <CheckCircle size={48} className="text-accent mb-2 animate-fade-in" />
             )}
-            <div className="text-2xl font-bold my-2" style={{ color: "#0A66C2" }}>
+            <div className="text-xl font-bold my-2" style={{ color: "#0A66C2" }}>
               {score} / {quiz.length} Correct
             </div>
             <div className="mb-4 text-gray-700">{result.text}</div>
-            <div className="flex gap-4 flex-wrap justify-center">
+            <div className="flex gap-3 flex-wrap justify-center">
               {score < quiz.length && (
                 <Button
                   onClick={resetQuiz}
@@ -174,11 +207,7 @@ const MiniQuizSection = () => {
                   Try Again
                 </Button>
               )}
-              <Button
-                asChild
-                variant="default"
-                className="font-semibold"
-              >
+              <Button asChild variant="default" className="font-semibold">
                 <a href="#connect" className="flex items-center gap-2">Connect</a>
               </Button>
             </div>
@@ -190,4 +219,3 @@ const MiniQuizSection = () => {
 };
 
 export default MiniQuizSection;
-
