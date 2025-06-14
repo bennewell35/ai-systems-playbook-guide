@@ -1,8 +1,8 @@
-
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import GuideSection from "@/components/GuideSection";
+import BestPracticeCards from "@/components/BestPracticeCards";
 import ProTipsSection from "@/components/ProTipsSection";
 import CaseStudySection from "@/components/CaseStudySection";
 import MiniQuizSection from "@/components/MiniQuizSection";
@@ -17,6 +17,7 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <GuideSection />
+        <BestPracticeCards />
         <ProTipsSection />
         <MiniQuizSection />
         <CaseStudySection />
