@@ -7,7 +7,7 @@ const ConnectSection = () => (
       <div className="flex-1 flex flex-col justify-center items-start mb-8 md:mb-0">
         <h2 className="text-2xl md:text-3xl font-extrabold mb-2">Want to go deeper or build smarter?</h2>
         <p className="mb-7 text-lg md:text-xl font-medium">
-          Reach out on LinkedIn or email me: <span className="underline text-white hover:text-gray-100">newelljben@gmail.com</span>
+          Reach out on LinkedIn or email me.
         </p>
         <div className="flex gap-4">
           <a
@@ -41,3 +41,4 @@ const ConnectSection = () => (
 );
 
 export default ConnectSection;
+

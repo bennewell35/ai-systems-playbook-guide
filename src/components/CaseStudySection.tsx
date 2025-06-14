@@ -17,17 +17,11 @@ const CaseStudySection = () => (
           This meant our chatbot could recommend the exact workout or meal from our own content—not just generic tips.
           The result? Fewer hallucinations, much more personalized coaching, and real value for our users.
         </p>
-        <a
-          href="https://www.linkedin.com/in/newelljben/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block mt-2 bg-accent text-white font-semibold px-5 py-2 rounded-full shadow hover:bg-accent/90 transition-colors text-base"
-        >
-          Learn More on LinkedIn
-        </a>
+        {/* LinkedIn CTA removed as requested */}
       </div>
     </div>
   </section>
 );
 
 export default CaseStudySection;
+
