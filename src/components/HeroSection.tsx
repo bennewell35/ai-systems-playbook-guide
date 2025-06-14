@@ -1,5 +1,6 @@
 
 import { Brain } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const HeroSection = () => (
   <section className="bg-primary text-white relative overflow-hidden">
@@ -11,12 +12,13 @@ const HeroSection = () => (
         <p className="text-lg md:text-2xl font-medium text-blue-100 mb-10 max-w-xl">
           A real-world playbook for learning LLMs, agents, prompt engineering, and how AI systems actually work.
         </p>
-        <a
-          href="#guide"
-          className="inline-block rounded-full bg-accent text-white font-semibold px-9 py-3.5 text-base md:text-lg shadow-lg hover:bg-accent/90 transition-colors"
+        <Button
+          asChild
+          variant="accent"
+          className="mb-4 md:mb-0 font-bold text-[16px] rounded-[12px] shadow-lg"
         >
-          Explore the Playbook
-        </a>
+          <a href="#guide" className="flex items-center gap-2">Explore the Playbook</a>
+        </Button>
       </div>
       <div className="flex-1 flex justify-center mb-12 md:mb-0">
         <div className="rounded-full bg-accent/20 flex items-center justify-center w-52 h-52 md:w-72 md:h-72 shadow-xl border-4 border-accent/30 transition-transform hover:scale-105">
