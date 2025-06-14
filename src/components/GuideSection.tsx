@@ -1,4 +1,3 @@
-
 import {
   Bot, File, Pencil, Folder, Armchair, Link2, Sliders, Network, ShieldCheck,
   Brain, Lightbulb
@@ -123,6 +122,76 @@ const guideTopics = [
     ],
     tools: "Humanloop, Custom logging, OpenAI Moderation",
     proTip: "Treat user feedback as your secret weapon for fast iteration."
+  },
+  {
+    icon: "📊",
+    iconColor: "#0A66C2",
+    title: "Model Evaluation",
+    summary: "Testing and comparing how different AI models perform on your actual tasks.",
+    why: "Choosing the right model can save money, improve accuracy, and reduce surprises.",
+    when: "",
+    best: [
+      "Benchmark models on real user prompts",
+      "Compare cost, latency, and output quality"
+    ],
+    tools: "",
+    proTip: "Run “blind” tests with users to see which answers they prefer."
+  },
+  {
+    icon: "🔗",
+    iconColor: "#12C18D",
+    title: "Prompt Chaining",
+    summary: "Combining multiple prompts in sequence to achieve a more complex outcome.",
+    why: "Allows for building powerful workflows—each step builds on the last.",
+    when: "",
+    best: [
+      "Keep each prompt simple",
+      "Test each step in isolation"
+    ],
+    tools: "",
+    proTip: "Log intermediate outputs for easy troubleshooting."
+  },
+  {
+    icon: "🔢",
+    iconColor: "#0A66C2",
+    title: "Tokenization & Limits",
+    summary: "AI models process text in “tokens”—chunks of words or characters.",
+    why: "Hitting token limits can cut off outputs or increase costs.",
+    when: "",
+    best: [
+      "Know your model’s token limit",
+      "Use short, clear prompts"
+    ],
+    tools: "",
+    proTip: "Summarize or chunk large texts before sending to the model."
+  },
+  {
+    icon: "🛡️",
+    iconColor: "#12C18D",
+    title: "AI Ethics & Safety",
+    summary: "Ensuring AI outputs are fair, unbiased, and safe for users.",
+    why: "Unethical AI can harm reputation, users, and even break laws.",
+    when: "",
+    best: [
+      "Use moderation tools",
+      "Review outputs for sensitive use cases"
+    ],
+    tools: "",
+    proTip: "Document your safety and review processes for transparency."
+  },
+  {
+    icon: "🧑‍💻",
+    iconColor: "#0A66C2",
+    title: "Human-in-the-Loop",
+    summary: "Combining AI automation with human review/approval for important decisions.",
+    why: "Humans catch what AI misses, especially for critical or high-risk outputs.",
+    when: "",
+    best: [
+      "Use AI for draft/first pass",
+      "Add human review for publishing or critical actions"
+    ],
+    tools: "",
+    proTip: "Let users “rate” AI responses to improve the system."
   }
 ];
 

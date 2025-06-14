@@ -1,4 +1,5 @@
 
+
 import { Lightbulb } from "lucide-react";
 const tips = [
   {
@@ -20,6 +21,35 @@ const tips = [
   {
     icon: <Lightbulb className="w-5 h-5" />,
     text: "Sandbox new agents. Always test before deploying live."
+  },
+  // New expanded Pro Tips provided by user:
+  {
+    icon: <Lightbulb className="w-5 h-5" />,
+    text: "Start with a clear outcome: Always know what “good” output looks like before you prompt."
+  },
+  {
+    icon: <Lightbulb className="w-5 h-5" />,
+    text: "Use system prompts for context: “You are a financial analyst…” works wonders."
+  },
+  {
+    icon: <Lightbulb className="w-5 h-5" />,
+    text: "Limit open-ended queries: The more specific you are, the better the results."
+  },
+  {
+    icon: <Lightbulb className="w-5 h-5" />,
+    text: "Check AI costs: Small prompt changes can save big on API bills."
+  },
+  {
+    icon: <Lightbulb className="w-5 h-5" />,
+    text: "Iterate, don’t perfect: Ship early, then improve with real feedback."
+  },
+  {
+    icon: <Lightbulb className="w-5 h-5" />,
+    text: "Keep users in control: Let users correct or override AI when possible."
+  },
+  {
+    icon: <Lightbulb className="w-5 h-5" />,
+    text: "Log everything: You’ll thank yourself when debugging."
   }
 ];
 const ProTipsSection = () => (
@@ -48,3 +78,4 @@ const ProTipsSection = () => (
   </section>
 );
 export default ProTipsSection;
+
