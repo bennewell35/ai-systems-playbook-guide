@@ -21,7 +21,6 @@ const tips = [
     icon: <Lightbulb className="w-5 h-5" />,
     text: "Sandbox new agents. Always test before deploying live."
   },
-  // New expanded Pro Tips provided by user:
   {
     icon: <Lightbulb className="w-5 h-5" />,
     text: "Start with a clear outcome: Always know what “good” output looks like before you prompt."
@@ -54,20 +53,19 @@ const tips = [
 const ProTipsSection = () => (
   <section
     id="pro-tips"
-    className="w-full bg-accent text-white py-10 md:py-12 my-12 md:my-16 px-0"
+    className="w-full bg-accent text-white py-10 md:py-12 my-12 md:my-16 px-0 animate-fade-in"
   >
     <div className="max-w-5xl mx-auto px-4">
-      <h2 className="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-2">
+      <h2 className="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-2 animate-fade-in" style={{ animationDelay: "80ms" }}>
         <Lightbulb className="w-6 h-6 text-white" />
         Product Builder Pro Tips
       </h2>
-      {/* Fit tips in scroll with text always contained */}
       <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide snap-x max-w-full">
         {tips.map((tip, i) => (
           <div
             key={i}
-            className="flex items-start gap-3 bg-accent/80 rounded-2xl shadow-lg min-w-[235px] max-w-xs md:min-w-[320px] md:max-w-sm px-4 py-4 snap-center animate-fade-in"
-            style={{ animationDelay: `${i * 60}ms` }}
+            className="flex items-start gap-3 bg-accent/80 rounded-2xl shadow-lg min-w-[235px] max-w-xs md:min-w-[320px] md:max-w-sm px-4 py-4 snap-center animate-fade-in transition-transform hover:scale-105"
+            style={{ animationDelay: `${i * 60 + 120}ms` }}
           >
             <div className="flex-shrink-0 mt-1">{tip.icon}</div>
             <div className="font-semibold text-base leading-snug break-words">{tip.text}</div>
@@ -78,3 +76,4 @@ const ProTipsSection = () => (
   </section>
 );
 export default ProTipsSection;
+

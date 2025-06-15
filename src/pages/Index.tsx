@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
@@ -10,7 +11,7 @@ import ConnectSection from "@/components/ConnectSection";
 import Footer from "@/components/Footer";
 import AIOpsWorkflowSection from "@/components/AIOpsWorkflowSection";
 import { AppSidebar } from "@/components/AppSidebar";
-import WhyThisWinsSection from "@/components/WhyThisWinsSection";
+// import WhyThisWinsSection from "@/components/WhyThisWinsSection";
 import RemixCalloutSection from "@/components/RemixCalloutSection";
 import PromptTransparencySection from "@/components/PromptTransparencySection";
 import MotivationalCard from "@/components/MotivationalCard";
@@ -40,8 +41,7 @@ const Index = () => {
             {/* Removed: <PromptTransparencySection /> */}
             <CaseStudySection />
             <ConnectSection />
-            {/* Moved remix/why this wins to bottom */}
-            <WhyThisWinsSection />
+            {/* Removed WhyThisWinsSection */}
             {/* Removed: <RemixCalloutSection /> */}
             {/* Removed: <RemixCaseStudySection /> */}
           </main>
@@ -53,3 +53,4 @@ const Index = () => {
 };
 
 export default Index;
+

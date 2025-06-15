@@ -1,10 +1,13 @@
 
 import { MessageCircleHeart } from "lucide-react";
 
-// Responsive card, better fit and wraps for all text.
+// Responsive card, better fit and wraps for all text, with micro-animation on appear and hover effect.
 const MotivationalCard = () => (
   <section id="motivation" className="max-w-xl mx-auto my-10 px-4 animate-fade-in">
-    <div className="rounded-3xl bg-gradient-to-br from-accent to-blue-600 text-white shadow-card flex gap-4 items-center p-6 md:p-8 min-h-[120px]">
+    <div className="rounded-3xl bg-gradient-to-br from-accent to-blue-600 text-white shadow-card flex gap-4 items-center p-6 md:p-8 min-h-[120px]
+      animate-scale-in transition-transform hover:scale-105"
+      style={{ animationDelay: "50ms" }}
+    >
       <MessageCircleHeart size={44} className="text-white drop-shadow-lg flex-shrink-0" />
       <div className="min-w-0">
         <h2 className="text-lg md:text-xl font-extrabold mb-1 leading-tight">
