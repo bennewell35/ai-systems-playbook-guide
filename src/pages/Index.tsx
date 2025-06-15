@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
@@ -38,13 +37,13 @@ const Index = () => {
             <MotivationalCard />
             <AboutSection />
             <HowIBuiltThisSection />
-            <PromptTransparencySection />
+            {/* Removed: <PromptTransparencySection /> */}
             <CaseStudySection />
             <ConnectSection />
             {/* Moved remix/why this wins to bottom */}
             <WhyThisWinsSection />
-            <RemixCalloutSection />
-            <RemixCaseStudySection />
+            {/* Removed: <RemixCalloutSection /> */}
+            {/* Removed: <RemixCaseStudySection /> */}
           </main>
           <Footer />
         </div>
@@ -52,4 +51,5 @@ const Index = () => {
     </SidebarProvider>
   );
 };
+
 export default Index;
