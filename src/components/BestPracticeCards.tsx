@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Lightbulb, Workflow } from "lucide-react";
 
@@ -51,13 +50,14 @@ const Card = ({
   bgColor: string;
 }) => (
   <article
-    className={`rounded-3xl w-full max-w-[480px] mx-auto shadow-card flex flex-col gap-5 py-8 px-4 sm:px-7 mb-6`}
+    className={`rounded-3xl w-full max-w-[440px] mx-auto shadow-card flex flex-col gap-4 py-7 px-3 md:px-6 mb-6 bg-opacity-95`}
     style={{
       background: bgColor,
       color: "#fff",
+      minHeight: 430,
     }}
   >
-    <header className="flex items-center gap-4 mb-2">
+    <header className="flex items-center gap-3 mb-0">
       <span
         className={`inline-flex items-center justify-center rounded-full`}
         style={{ background: iconBg, width: 46, height: 46 }}
@@ -65,26 +65,25 @@ const Card = ({
         {icon}
       </span>
       <h3
-        className={`text-lg sm:text-xl font-bold`}
+        className={`text-base md:text-lg font-bold leading-tight`}
         style={{ color: headingColor }}
       >
         {title}
       </h3>
     </header>
-    <ul className="list-disc ml-5 space-y-2 text-[15px] sm:text-base">
+    <ul className="list-disc ml-5 space-y-1 text-[15px] md:text-base max-w-full">
       {practices.map((item, idx) => (
-        <li key={idx} className="leading-snug">
+        <li key={idx} className="leading-snug break-words">
           <span
-            // dangerouslySet for semibold best practice highlights
             dangerouslySetInnerHTML={{ __html: item }}
           />
         </li>
       ))}
     </ul>
-    <div className="mt-3">
-      <div className="bg-white/20 rounded-lg px-3 py-2 text-white font-semibold text-sm sm:text-base flex items-center gap-2">
-        <Lightbulb className="inline-block text-yellow-200" size={20} />{" "}
-        <span>
+    <div className="mt-auto">
+      <div className="bg-white/20 rounded-lg px-3 py-2 text-white font-semibold text-sm md:text-base flex items-center gap-2 max-w-full">
+        <Lightbulb className="inline-block text-yellow-200" size={20} />
+        <span className="leading-tight break-words">
           <span className="font-bold">Pro Tip:</span> {proTip}
         </span>
       </div>
@@ -95,7 +94,7 @@ const Card = ({
 const BestPracticeCards = () => (
   <section
     aria-label="Agent and MCPS Best Practices"
-    className="w-full flex flex-col sm:flex-row gap-5 justify-center items-stretch mt-8 mb-4 px-2"
+    className="w-full flex flex-col md:flex-row gap-7 md:gap-6 justify-center items-stretch mt-8 mb-4 px-2"
   >
     <Card
       icon={<Workflow size={28} className="text-white" />}
@@ -119,4 +118,3 @@ const BestPracticeCards = () => (
 );
 
 export default BestPracticeCards;
-

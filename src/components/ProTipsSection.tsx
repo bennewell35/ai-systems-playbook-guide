@@ -1,3 +1,4 @@
+
 import { Lightbulb } from "lucide-react";
 const tips = [
   {
@@ -53,7 +54,6 @@ const tips = [
 const ProTipsSection = () => (
   <section
     id="pro-tips"
-    // Added extra margin above and below for spacing (my-12 on base, my-16 on md). py-10 stays for inside
     className="w-full bg-accent text-white py-10 md:py-12 my-12 md:my-16 px-0"
   >
     <div className="max-w-5xl mx-auto px-4">
@@ -61,16 +61,16 @@ const ProTipsSection = () => (
         <Lightbulb className="w-6 h-6 text-white" />
         Product Builder Pro Tips
       </h2>
-      {/* Ensure a 16px gap (gap-4) between cards in scroll */}
-      <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide snap-x">
+      {/* Fit tips in scroll with text always contained */}
+      <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide snap-x max-w-full">
         {tips.map((tip, i) => (
           <div
             key={i}
-            className="flex items-center gap-3 bg-accent/80 rounded-2xl shadow-lg min-w-[270px] md:min-w-[380px] px-6 py-5 snap-center animate-fade-in"
-            style={{ animationDelay: `${i * 60}ms` as string }}
+            className="flex items-start gap-3 bg-accent/80 rounded-2xl shadow-lg min-w-[235px] max-w-xs md:min-w-[320px] md:max-w-sm px-4 py-4 snap-center animate-fade-in"
+            style={{ animationDelay: `${i * 60}ms` }}
           >
-            <div className="flex-shrink-0">{tip.icon}</div>
-            <div className="font-semibold text-base">{tip.text}</div>
+            <div className="flex-shrink-0 mt-1">{tip.icon}</div>
+            <div className="font-semibold text-base leading-snug break-words">{tip.text}</div>
           </div>
         ))}
       </div>

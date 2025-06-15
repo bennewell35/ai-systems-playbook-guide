@@ -10,7 +10,6 @@ import MiniQuizSection from "@/components/MiniQuizSection";
 import ConnectSection from "@/components/ConnectSection";
 import Footer from "@/components/Footer";
 import AIOpsWorkflowSection from "@/components/AIOpsWorkflowSection";
-
 import { AppSidebar } from "@/components/AppSidebar";
 import WhyThisWinsSection from "@/components/WhyThisWinsSection";
 import RemixCalloutSection from "@/components/RemixCalloutSection";
@@ -25,18 +24,14 @@ const Index = () => {
   return (
     <SidebarProvider>
       <div className="flex min-h-screen w-full bg-background font-sans overflow-x-hidden">
-        {/* Sticky sidebar for navigation */}
         <AppSidebar />
         <div className="flex-1 flex flex-col w-full max-w-full">
           <Header />
           <main>
             <section id="hero"><HeroSection /></section>
-            <WhyThisWinsSection />
-            <RemixCalloutSection />
             <GuideSection />
             <BestPracticeCards />
             <AIOpsWorkflowSection />
-            <RemixCaseStudySection />
             <ProTipsSection />
             <MiniQuizSection />
             <FaqGlossarySection />
@@ -46,6 +41,10 @@ const Index = () => {
             <PromptTransparencySection />
             <CaseStudySection />
             <ConnectSection />
+            {/* Moved remix/why this wins to bottom */}
+            <WhyThisWinsSection />
+            <RemixCalloutSection />
+            <RemixCaseStudySection />
           </main>
           <Footer />
         </div>
