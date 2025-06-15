@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
@@ -8,6 +9,7 @@ import CaseStudySection from "@/components/CaseStudySection";
 import MiniQuizSection from "@/components/MiniQuizSection";
 import ConnectSection from "@/components/ConnectSection";
 import Footer from "@/components/Footer";
+import AIOpsWorkflowSection from "@/components/AIOpsWorkflowSection";
 
 const Index = () => {
   return (
@@ -18,6 +20,7 @@ const Index = () => {
         <AboutSection />
         <GuideSection />
         <BestPracticeCards />
+        <AIOpsWorkflowSection />
         <ProTipsSection />
         <MiniQuizSection />
         <CaseStudySection />
