@@ -11,22 +11,42 @@ import ConnectSection from "@/components/ConnectSection";
 import Footer from "@/components/Footer";
 import AIOpsWorkflowSection from "@/components/AIOpsWorkflowSection";
 
+import { AppSidebar } from "@/components/AppSidebar";
+import WhyThisWinsSection from "@/components/WhyThisWinsSection";
+import RemixCalloutSection from "@/components/RemixCalloutSection";
+import PromptTransparencySection from "@/components/PromptTransparencySection";
+import MotivationalCard from "@/components/MotivationalCard";
+import FaqGlossarySection from "@/components/FaqGlossarySection";
+import HowIBuiltThisSection from "@/components/HowIBuiltThisSection";
+import RemixCaseStudySection from "@/components/RemixCaseStudySection";
+
 const Index = () => {
   return (
-    <div className="w-full min-h-screen bg-background font-sans">
-      <Header />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <GuideSection />
-        <BestPracticeCards />
-        <AIOpsWorkflowSection />
-        <ProTipsSection />
-        <MiniQuizSection />
-        <CaseStudySection />
-        <ConnectSection />
-      </main>
-      <Footer />
+    <div className="flex min-h-screen w-full bg-background font-sans overflow-x-hidden">
+      {/* Sticky sidebar for navigation */}
+      <AppSidebar />
+      <div className="flex-1 flex flex-col w-full max-w-full">
+        <Header />
+        <main>
+          <section id="hero"><HeroSection /></section>
+          <WhyThisWinsSection />
+          <RemixCalloutSection />
+          <GuideSection />
+          <BestPracticeCards />
+          <AIOpsWorkflowSection />
+          <RemixCaseStudySection />
+          <ProTipsSection />
+          <MiniQuizSection />
+          <FaqGlossarySection />
+          <MotivationalCard />
+          <AboutSection />
+          <HowIBuiltThisSection />
+          <PromptTransparencySection />
+          <CaseStudySection />
+          <ConnectSection />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 };
