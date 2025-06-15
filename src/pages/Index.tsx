@@ -19,35 +19,38 @@ import MotivationalCard from "@/components/MotivationalCard";
 import FaqGlossarySection from "@/components/FaqGlossarySection";
 import HowIBuiltThisSection from "@/components/HowIBuiltThisSection";
 import RemixCaseStudySection from "@/components/RemixCaseStudySection";
+import { SidebarProvider } from "@/components/ui/sidebar";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen w-full bg-background font-sans overflow-x-hidden">
-      {/* Sticky sidebar for navigation */}
-      <AppSidebar />
-      <div className="flex-1 flex flex-col w-full max-w-full">
-        <Header />
-        <main>
-          <section id="hero"><HeroSection /></section>
-          <WhyThisWinsSection />
-          <RemixCalloutSection />
-          <GuideSection />
-          <BestPracticeCards />
-          <AIOpsWorkflowSection />
-          <RemixCaseStudySection />
-          <ProTipsSection />
-          <MiniQuizSection />
-          <FaqGlossarySection />
-          <MotivationalCard />
-          <AboutSection />
-          <HowIBuiltThisSection />
-          <PromptTransparencySection />
-          <CaseStudySection />
-          <ConnectSection />
-        </main>
-        <Footer />
+    <SidebarProvider>
+      <div className="flex min-h-screen w-full bg-background font-sans overflow-x-hidden">
+        {/* Sticky sidebar for navigation */}
+        <AppSidebar />
+        <div className="flex-1 flex flex-col w-full max-w-full">
+          <Header />
+          <main>
+            <section id="hero"><HeroSection /></section>
+            <WhyThisWinsSection />
+            <RemixCalloutSection />
+            <GuideSection />
+            <BestPracticeCards />
+            <AIOpsWorkflowSection />
+            <RemixCaseStudySection />
+            <ProTipsSection />
+            <MiniQuizSection />
+            <FaqGlossarySection />
+            <MotivationalCard />
+            <AboutSection />
+            <HowIBuiltThisSection />
+            <PromptTransparencySection />
+            <CaseStudySection />
+            <ConnectSection />
+          </main>
+          <Footer />
+        </div>
       </div>
-    </div>
+    </SidebarProvider>
   );
 };
 export default Index;

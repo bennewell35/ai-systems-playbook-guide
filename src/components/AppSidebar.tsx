@@ -18,14 +18,15 @@ const navItems = [
 ];
 
 export function AppSidebar() {
-  const { collapsed } = useSidebar();
+  const { state } = useSidebar();
+  const collapsed = state === "collapsed";
   const location = useLocation();
   // doesn't need router highlighting—scrolls to anchor
   return (
-    <Sidebar className={collapsed ? "w-14" : "w-52"} collapsible>
+    <Sidebar className={collapsed ? "w-14" : "w-52"} collapsible="offcanvas">
       <SidebarTrigger className="m-2 self-end" />
       <SidebarContent>
-        <SidebarGroup open>
+        <SidebarGroup>
           <SidebarGroupLabel>Playbook</SidebarGroupLabel>
           <SidebarMenu>
             {navItems.map(item => (
