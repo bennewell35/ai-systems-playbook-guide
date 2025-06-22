@@ -1,73 +1,53 @@
-# Welcome to your Lovable project
+# AI Systems Playbook
 
-## Project info
+The **AI Systems Playbook** is a living resource for building, scaling, and managing production-ready AI solutions—from proof of concept to enterprise deployment. It combines technical recipes, best practices, architecture patterns, and practical tools to help engineers, product leaders, and innovators build value with AI.
 
-**URL**: https://lovable.dev/projects/fc5aec04-3899-4680-89e9-a08a9adf7827
+---
 
-## How can I edit this code?
+## 🚀 Project Overview
 
-There are several ways of editing your application.
+- **Purpose:** Demystify AI system design and implementation for real-world business impact
+- **Audience:** Engineers, product managers, founders, technical leads, and students
+- **Content:** Frameworks, example architectures, sample prompts, code snippets, vendor comparisons, and workflow templates
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/fc5aec04-3899-4680-89e9-a08a9adf7827) and start prompting.
+## 🌟 Key Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- End-to-end AI system architectures (ML, LLM, data pipelines, etc.)
+- Best practices for model selection, training, and deployment
+- Guides for integrating AI APIs (OpenAI, Anthropic, etc.) and building hybrid pipelines
+- Product management checklists, risk frameworks, and stakeholder templates
+- Example code in Python, JavaScript, and no-code/low-code tools
+- Real-world lessons from launched projects
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack & Topics
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Python, OpenAI API, LangChain, Django, FastAPI, Streamlit, React
+- Deployment with AWS, Azure, GCP, Vercel, Heroku
+- No-code: Lovable, Zapier, Airtable
+- Prompt engineering, evaluation, monitoring, compliance
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📚 How to Use
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Browse the `/guides` folder for system blueprints and checklists
+- Use `/examples` for working code and deployment recipes
+- Reference `/playbooks` for project management templates
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🎯 Roadmap
 
-**Edit a file directly in GitHub**
+- [x] Initial architecture and prompt engineering guides
+- [ ] Add more sample projects (chatbots, vision, tabular ML)
+- [ ] Vendor and tool comparison matrix
+- [ ] Real-world “post-mortem” write-ups from shipped AI products
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/fc5aec04-3899-4680-89e9-a08a9adf7827) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🙌 Contributing
+- For collaboration or questions, connect with [Jonathan Newell](https://www.linkedin.com/in/jonathan-benjamin-newell/)
